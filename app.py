@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def fileFrontPage():
-    return render_template('fileform.html')
+    return render_template('index.html')
 
 @app.route("/handleUpload", methods=['POST'])
 def handleFileUpload():
