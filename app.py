@@ -12,7 +12,7 @@ def handleFileUpload():
     if 'files[]' in request.files:
         file = request.files['files[]']
         if file.filename != '':            
-            file.save(os.path.join('/home/shawn/share/upload', file.filename))
+            file.save(os.path.join('/home/shawn/share/Upload', file.filename))
     # return redirect(url_for('fileFrontPage'))
     return "File uploaded successfully!"
 
